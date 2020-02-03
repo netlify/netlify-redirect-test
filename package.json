@@ -12,7 +12,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "react-scripts build && npm run post-build",
+    "post-build": "cp src/auth.html build/auth.html",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
