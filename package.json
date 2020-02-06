@@ -13,7 +13,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build && npm run post-build",
-    "post-build": "cp -r src/login/index.html build/login/index.html",
+    "post-build": "mkdir -p build/login && cp -r src/login/index.html build/login/index.html",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
